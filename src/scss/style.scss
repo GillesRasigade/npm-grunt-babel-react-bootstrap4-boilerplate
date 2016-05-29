@@ -1,0 +1,12 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$margin-starter: 75px;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color !important;
+}
+
+#main {
+  margin-top: $margin-starter;
+}
