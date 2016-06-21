@@ -1,0 +1,7 @@
+{
+  "extends": "eslint-config-airbnb",
+  "rules" : {
+    "strict": 0,
+    "no-underscore-dangle": 0
+  }
+}

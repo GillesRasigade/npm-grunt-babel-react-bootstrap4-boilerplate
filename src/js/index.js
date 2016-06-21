@@ -1,30 +1,15 @@
-
 import bootstrap from 'bootstrap';
 import ReactDOM from 'react-dom';
 import React from 'react';
 
-import {sum,square,variable,MyClass} from './import';
-// export for others scripts to use
+var Nav = require('./components/Nav');
+var Button = require('./components/Button');
+var State = require('./components/State');
+var App = require('./components/App');
 
-console.log(square(5)); //25
+ReactDOM.render(<Nav />, document.getElementById('nav'));
 
-var cred={
-    name:'Ritesh Kumar',
-    enrollmentNo:11115078
-}
+ReactDOM.render(<Button/>, document.getElementById('button'));
+ReactDOM.render(<State/>, document.getElementById('state'));
 
-var x = new MyClass(cred);
-console.log(x.getName());
-
-var Nav = require('./app/Nav');
-var Main = require('./Main');
-
-ReactDOM.render(
-  <Nav title={x.getName()}/>,
-  document.getElementById('nav')
-);
-
-ReactDOM.render(
-  <Main hello="World !"/>,
-  document.getElementById('main')
-);
+ReactDOM.render(<App hello="World !"/>, document.getElementById('main'));
